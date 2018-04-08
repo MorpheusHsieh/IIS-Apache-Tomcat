@@ -1,0 +1,64 @@
+<html>
+
+<head>
+  <title>帳號申請</title>
+  <script type="text/javascript" language="javascript" src="NewAccount.js"></script>
+  <Script type="text/javascript" language="javascript">
+  <!--
+    function CheckAcnt()
+    {
+      document.frmNewAcnt.BtnSend.value = "帳號查詢";
+      document.frmNewAcnt.submit();
+    }
+  //-->
+  </Script>
+  <base target="main">
+</head>
+
+<body>
+
+<form name="frmNewAcnt" method="post" action="NewAccount.jsp">
+
+  <input type="hidden" name="BtnSend" value="">
+
+  <p>我是<font color="#0000FF"><u>申請帳號</u></font>的網頁...</p>
+  <p>　</p>
+  
+  <div align="center">
+  <table border="1">
+    <tr>
+      <td>帳號</td>
+      <td><input type="text" name="txtID" size="12"></td>
+      <td><input type="button" name="button2" value="查詢" onClick="CheckAcnt()"></td>
+    </tr>
+    <tr>
+      <td>密碼</td>
+      <td colspan="2"><input type="password" name="txtPswd" size="12"></td>
+    </tr>
+    <tr>
+      <td>密碼再確認</td>
+      <td colspan="2"><input type="password" name="txtRePswd" size="12"></td>
+    </tr>
+    <tr>
+      <td>姓名</td>
+      <td colspan="2"><input type="text" name="txtName" size="12"></td>
+    </tr>
+    <tr>
+      <td>單位</td>
+      <td colspan="2">
+        <select name="selDept">
+          <option value="2070000" selected></option>
+          <option value="處辦室">處辦室</option>
+          <option value="資管室">資管室</option>
+        </select>
+      </td>
+    </tr>
+  </table>
+  <p />
+  <input type="button" name="button1" value="我要申請帳號" onClick="DataCheck()">
+  </div>
+
+</form>  
+
+</body>
+</html>

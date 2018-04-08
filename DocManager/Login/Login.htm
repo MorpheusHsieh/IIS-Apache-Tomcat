@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <title>登入頁面</title>
+  <script type="text/javascript" language="javascript" src="Login.js"></script>
+  <base target="main">
+</head>
+
+<body>
+
+
+<form name="frmLogin" method="post" action="LoginCheck.jsp">
+
+  <p>我是<font color="#0000FF">公文奉核管制系統</font>的登入頁面...</p>
+
+  <input type="hidden" name="BtnSend">
+  <div align="center">
+  <table border="1">
+    <tr>
+      <td>帳號</td>
+      <td><input type="text" name="txtID" size="12"></td>
+    </tr>
+    <tr>
+      <td>密碼</td>
+      <td><input type="password" name="txtPswd" size="12"></td>
+    </tr>
+  </table>
+  <br>
+  <input type="button" name="button1" value="登　　入" onClick="DataCheck()">
+  </div>
+
+</form>  
+
+</body>
+
+</html>
