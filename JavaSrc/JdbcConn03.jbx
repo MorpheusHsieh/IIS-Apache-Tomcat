@@ -1,0 +1,13 @@
+[PropertyInfo]
+_conn,Connection,false,false, , ,false,<default>
+_nFields,int,false,false, , ,false,<default>
+_nRecords,int,false,false, , ,false,<default>
+_rs,ResultSet,false,false, , ,false,<default>
+_sData,String[][],false,false, , ,false,<default>
+_sFieldNames,String[],false,false, , ,false,<default>
+_stmt,Statement,false,false, , ,false,<default>
+[IconNames]
+
+
+
+
