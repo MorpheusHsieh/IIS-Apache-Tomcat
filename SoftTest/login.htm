@@ -1,0 +1,44 @@
+<html>
+
+<head><title>丙級軟體應用測試</title></head>
+
+<script>
+
+  function formReset()
+  {
+    return confirm("確定清除資料");
+  }
+  
+  function formSubmit()
+  {
+    if (this.txtName.value =="")
+    {
+      alert("名字必須填寫!!!");
+      return false;
+    }
+  }
+  
+</script>
+
+<body>
+
+<form name="login" method="get" action="SoftTest.jsp">
+
+  <div align="center">
+   名字：<input type="text" name="txtName">
+   <p>
+    <input type="submit" name="submitA" value="確定送出">
+    <input type="reset" name="resetA" value="清除資料">
+   </p> 
+  </div> 
+
+</form>
+
+</body>
+
+</html>
+
+<script>
+  document.login.onsubmit = formSubmit;
+  document.login.onreset = formReset;
+</script>
