@@ -1,0 +1,26 @@
+  <%
+    String strSelect = "";
+  %>  
+  <div align="center">
+    <table>
+      <tr>
+        <td>預算科目：</td>
+        <td><%=strData01%><input type="hidden" name="txtData01" value="<%=strData01%>"></td>
+      </tr>
+      <tr>
+        <td>預算名稱：</td>
+        <td><input type="text" name="txtData02" value="<%=strData02%>"></td>
+      </tr>
+      <tr>
+        <td>預算金額：</td>
+        <td><input type="text" name="txtData03" value="<%=strData03%>"></td>
+      </tr>
+    </table>
+	<p align="center">
+	  <table border="0" width="100%">
+		<tr>
+		  <td align="center"><input type="submit" name="BtnSend" value="確認修改預算"></td>
+		</tr>
+	  </table>
+	</p>  
+  </div>

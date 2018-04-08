@@ -1,0 +1,33 @@
+                <!-- 預算月份 //-->
+                <%
+                  strName = "txtData04_" + row_data[row].getString(0);
+                  strValue = row_data[row].getString(3);
+                %>
+                <td>
+				  <SELECT name="<%=strName%>" size="1">
+					<%strSelect = ((strValue != null) && (strValue.equals("一月"))) ? "selected" : "";%>
+					<OPTION value="一月" <%=strSelect%>>一月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("二月"))) ? "selected" : "";%>
+					<OPTION value="二月" <%=strSelect%>>二月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("三月"))) ? "selected" : "";%>
+					<OPTION value="三月" <%=strSelect%>>三月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("四月"))) ? "selected" : "";%>
+					<OPTION value="四月" <%=strSelect%>>四月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("五月"))) ? "selected" : "";%>
+					<OPTION value="五月" <%=strSelect%>>五月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("六月"))) ? "selected" : "";%>
+					<OPTION value="六月" <%=strSelect%>>六月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("七月"))) ? "selected" : "";%>
+					<OPTION value="七月" <%=strSelect%>>七月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("八月"))) ? "selected" : "";%>
+					<OPTION value="八月" <%=strSelect%>>八月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("九月"))) ? "selected" : "";%>
+					<OPTION value="九月" <%=strSelect%>>九月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("十月"))) ? "selected" : "";%>
+					<OPTION value="十月" <%=strSelect%>>十月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("十一月"))) ? "selected" : "";%>
+					<OPTION value="十一月" <%=strSelect%>>十一月</OPTION>
+					<%strSelect = ((strValue != null) && (strValue.equals("十二月"))) ? "selected" : "";%>
+					<OPTION value="十二月" <%=strSelect%>>十二月</OPTION>
+				  </SELECT>  
+				</td>

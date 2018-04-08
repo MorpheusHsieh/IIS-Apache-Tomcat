@@ -1,0 +1,56 @@
+  <div align="center">
+    <table border="1">
+  
+      <tr>
+        <td>帳號：</td>
+        <td><input type="hidden" name="txtName" value="<%=strName%>"><%=strName%></td>
+      </tr>
+
+      <tr>
+        <td>密碼：</td>
+        <td><input type="password" name="txtPswd" value=""></td>
+      </tr>
+
+      <tr>
+        <td>密碼再確認：</td>
+        <td><input type="password" name="txtRePswd" value=""></td>
+      </tr>
+
+      <tr>
+        <td>部門：</td>
+        <td>
+          <SELECT name="selUnit" size="1">
+            <%
+              String strSelect = "";
+              strSelect = ((strUnit == null) || (strUnit.equals("一般部門"))) ? "selected" : "";
+            %>
+    		<OPTION value="一般部門 "<%=strSelect%>>一般部門</OPTION>
+		  
+            <%strSelect = ((strUnit != null) && (strUnit.equals("預算管理"))) ? "selected" : "";%>
+		    <OPTION value="預算管理 "<%=strSelect%>>預算管理</OPTION>
+
+            <%strSelect = ((strUnit != null) && (strUnit.equals("資訊管理"))) ? "selected" : "";%>
+		    <OPTION value="資訊管理 "<%=strSelect%>>資訊管理</OPTION>
+
+            <%strSelect = ((strUnit != null) && (strUnit.equals("公文管理"))) ? "selected" : "";%>
+		    <OPTION value="公文管理 "<%=strSelect%>>公文管理</OPTION>
+	 	  </SELECT>
+        </td>
+      </tr>
+          
+	  <tr>
+	    <td align="right">角色權限：</td>
+	    <td>
+	      <SELECT name="selRole" size="1">
+			<%strSelect = ((strRole == null) || (strRole.equals("使用者"))) ? "selected" : "";%>
+			<OPTION value="使用者 " <%=strSelect%>>使用者</OPTION>
+			
+			<%strSelect = ((strRole != null) && (strRole.equals("管理者"))) ? "selected" : "";%>
+			<OPTION value="管理者 " <%=strSelect%>>管理者</OPTION>
+		  </SELECT>  
+		</td>
+	  </tr>
+    </table>
+    <p/>
+    <input type="button" name="button1" value="確定修改" onclick="DataCheck()">
+  </div> 
