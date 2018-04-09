@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>登入畫面</title>
+</head>
+
+<Script Language="VBScript">
+<!--  
+
+  Function datacheck()
+  
+    If login.userid.value=Empty Then
+      msg = "「使用者名稱不得為空白」！"   
+      MsgBox msg, 64, "Oh no!"
+      focusto(0)
+      Exit Function
+    End if  
+
+    If login.babyname.value=Empty Then
+      msg = "「寶寶名字不得為空白」！"   
+      MsgBox msg, 64, "Oh no!"
+      focusto(1)
+      Exit Function
+    End if  
+   
+    If login.passwd.value=Empty Then
+      msg = "「密碼不得為空白」！"   
+      MsgBox msg, 64, "Oh no!"
+      focusto(2)
+      Exit Function
+    End if  
+  
+    login.Submit
+  
+  End Function
+  
+  Sub focusto(x)
+    document.login.elements(x).focus()
+  End Sub
+
+-->    
+</Script>
+
+<body background="images/bg001.gif">
+
+  <form action="login.asp" method="post" name="login">  
+   
+  <img src="images/Redball.gif" width="14" height="14"> 
+  使用者名稱：  
+  <input type="text" name="userid" size=10>   
+  <br>   
+     
+  <img src="images/Redball.gif" width="14" height="14">   
+  寶寶的名字：  
+  <input type="text" name="babyname" size=10>   
+  <br>   
+  
+  <img src="images/Redball.gif" width="14" height="14">   
+  密　　　碼：  
+  <input type="password" name="passwd" size=10>  
+  <hr>  
+    
+  <input type="button" value="送  出" onclick="datacheck">  
+  <input type="Reset" value="這次不算">   
+   
+  </form>   
+   
+</body>   
+   
+</html>   
