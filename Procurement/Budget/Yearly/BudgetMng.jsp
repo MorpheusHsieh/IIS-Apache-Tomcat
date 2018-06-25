@@ -1,7 +1,7 @@
 <%@page language="Java"%>
 <%@page contentType="text/html;charset=Big5"%>
 <%@page import="Procurement.Budget"%>
-<%@page import="avatar.dx.database.*"%>
+<%@page import="Morpheus.dx.database.*"%>
 
 <!-- 判斷 Session 是否有登入資訊 //-->
 <%@include file="../../Utility/CheckSession.inc"%>

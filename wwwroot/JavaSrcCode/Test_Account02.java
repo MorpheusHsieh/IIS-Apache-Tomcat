@@ -6,8 +6,8 @@ public class Test_Account02
   {
     String ini_file = "c:\\Java\\Src\\Infomgn.ini";
 
-    System.out.println("查詢帳號 Avatar 的資料");
-    String user = "Avatar";
+    System.out.println("查詢帳號 Morpheus 的資料");
+    String user = "Morpheus";
     Account02 ac = new Account02();
     ac.OpenConnection(ini_file);
     if (ac.Query(user) > 0)

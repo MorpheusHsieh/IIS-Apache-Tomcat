@@ -11,7 +11,7 @@ public class Test_MsgBoard
     String sd_code = mb01.getNewSunDayCode();
     String title = "行政室公告系統測試"+ sd_code + "...";
     String content = "沒事...";
-    String issueman = "Avatar";
+    String issueman = "Morpheus";
 
     // 新增一筆公告訊息....
     int result = mb01.NewMessage(title, content, issueman);

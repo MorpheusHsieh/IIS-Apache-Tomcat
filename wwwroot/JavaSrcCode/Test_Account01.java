@@ -6,7 +6,7 @@ public class Test_Account01
   {
     String ini_file = "c:\\java\\src\\Account01.ini";
     Account01 ac = new Account01(ini_file);
-    String nickname = "Avatar";
+    String nickname = "Morpheus";
     String password = "0427";
     int result = -1;
 
@@ -36,7 +36,7 @@ public class Test_Account01
     }
 
     // 查詢使用者資料
-    String[] user_data = ac.Query("Avatar");
+    String[] user_data = ac.Query("Morpheus");
     String msg = "";
     int cols = user_data.length;
     for (int i=0; i<cols; i++)

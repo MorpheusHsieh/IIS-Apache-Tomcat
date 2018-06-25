@@ -174,7 +174,7 @@
                                                            
    </table>                                                       
 <p class="link">Copyright(c) 2000 Designed &amp; Produced by <a href="mailto:nicel309@ms43.hinet.net"><b>joyce</b></a>                                                                
-and <a href="mailto:hhhsich1@ms37.hinet.net"><b>Avatar.</b></a></p>                                                     
+and <a href="mailto:hhhsich1@ms37.hinet.net"><b>Morpheus.</b></a></p>                                                     
 </form>          
 </div> 
 </body>                                                   

